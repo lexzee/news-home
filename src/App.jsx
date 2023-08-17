@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <body>
+    <div className='body'>
       <div className="App">
         <Header />
         <Main />
@@ -16,9 +16,9 @@ function App() {
       </div>
       <div className="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="https://github.com/lexzee">Your Name Here</a>.
+          Coded by <a href="https://github.com/lexzee">Lexzee</a>.
       </div>
-    </body>
+    </div>
   )
 }
 

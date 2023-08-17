@@ -1,10 +1,12 @@
 import logo from '../assets/images/logo.svg'
+import menuOpen from '../assets/images/icon-menu.svg'
 
 const Header = () => {
   return (
     <header className="header">
         <img src={logo} alt="logo" className="logo" />
-        <nav className="nav">
+        <img src={menuOpen} alt="" className="menu" />
+        <nav className="nav hidden">
           <li className="navitem">Home</li>
           <li className="navitem">New</li>
           <li className="navitem">Popular</li>

@@ -1,0 +1,83 @@
+.body{
+  outline: 1px groove black;
+  width: 350px;
+  max-width: 350px;
+  padding: 1em;
+
+  .header{
+    outline: 1px solid red;
+    display: flex;
+    margin: .5em 0 1.5rem 0;
+
+    img{
+      width: 15%;
+    }
+
+    .logo{
+      margin-right: auto;
+    }
+  }
+
+  .hero{
+    outline: 1px solid red;
+  }
+
+  .main{
+    outline: 1px solid red;
+
+    h1{
+      font-size: 3rem;
+      font-weight: 800;
+      margin: .4em 0;
+    }
+
+    p{
+      line-height: 1.5;
+    }
+
+    button{
+      padding: 1.2em 2em;
+      background-color: $red;
+      color: $offWhite;
+      border: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin: 2em 0;
+    }
+
+    .new{
+      outline: 1px solid green;
+      background-color: $dBlue;
+      color: $offWhite;
+      padding: 1.5em;
+
+      h2{
+        color: $orange;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+      }
+
+      hr{
+        // outline: 1px solid green;
+        border: 1px solid $dgBlue;
+        margin: 2.3rem 0;
+      }
+      .news{
+        // padding-bottom: 1.5em;
+        // margin: 2em 0 .5em;
+
+        h3{
+          font-weight: 700;
+          font-size: 1.3em;
+          margin-bottom: .7em;
+        }
+
+        p{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
