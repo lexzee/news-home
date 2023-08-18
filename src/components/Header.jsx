@@ -2,11 +2,11 @@ import logo from '../assets/images/logo.svg'
 import menuOpen from '../assets/images/icon-menu.svg'
 
 
-const Header = () => {
+const Header = (prop) => {
   return (
     <header className="header">
       <img src={logo} alt="logo" className="logo" />
-      <img src={menuOpen} alt="" className="menu open" />
+      <img src={menuOpen} alt="" className={`menu open`} onClick={prop.handleClick} />
       <nav className="nav hidden">
           <li className="navitem">Home</li>
           <li className="navitem">New</li>

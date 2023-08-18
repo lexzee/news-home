@@ -6,13 +6,16 @@ import Footer from './components/footer'
 import MobileMenu from './components/MobileMenu'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [clicked, setClicked] = useState(0)
+  const handleClick = ()=>{
+    clicked == 0 ? setClicked(1) : setClicked(0)
+  }
 
   return (
     <div className='body'>
       <div className="App">
-        <MobileMenu />
-        <Header />
+        <MobileMenu clicked={clicked} handleClick={handleClick} />
+        <Header handleClick={handleClick} />
         <Main />
         <Footer />
       </div>

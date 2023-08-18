@@ -1,9 +1,9 @@
 import menuClose from '../assets/images/icon-menu-close.svg'
 
-const MobileMenu = () => {
+const MobileMenu = (prop) => {
   return (
-    <nav className="nav hidden">
-      <img src={menuClose} alt="" className="menu close" />
+    <nav className={`nav ${prop.clicked?"":"hidden"}`}>
+      <img src={menuClose} alt="" className="menu close" onClick={prop.handleClick} />
         <li className="navitem one">Home</li>
         <li className="navitem 2">New</li>
         <li className="navitem 3">Popular</li>
