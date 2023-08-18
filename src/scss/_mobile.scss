@@ -1,38 +1,53 @@
 .body{
-  outline: 1px groove black;
-  width: 350px;
+  // outline: 1px groove black;
+  // width: 350px;
+  // min-width: 350px;
   max-width: 350px;
   padding: 1em;
+  z-index: 0;
+  position: relative;
 
   .header{
-    outline: 1px solid red;
+    // outline: 1px solid red;
     display: flex;
     margin: .5em 0 1.5rem 0;
+    place-items: center;
+    position: relative;
 
     img{
       width: 15%;
+      display: block;
     }
 
     .logo{
       margin-right: auto;
+      z-index: 1;
+    }
+
+    .menu{
+      height: 10%;
+      width: 12%;
+      padding: .5em 0;
     }
   }
 
   .hero{
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
 
   .main{
-    outline: 1px solid red;
+    // outline: 1px solid red;
 
     h1{
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 800;
       margin: .4em 0;
+      color: $dBlue;
     }
 
     p{
       line-height: 1.5;
+      color: $dgBlue;
     }
 
     button{
@@ -51,6 +66,7 @@
       background-color: $dBlue;
       color: $offWhite;
       padding: 1.5em;
+      margin-bottom: 2rem;
 
       h2{
         color: $orange;
@@ -60,24 +76,94 @@
       }
 
       hr{
-        // outline: 1px solid green;
         border: 1px solid $dgBlue;
         margin: 2.3rem 0;
       }
       .news{
-        // padding-bottom: 1.5em;
-        // margin: 2em 0 .5em;
 
         h3{
           font-weight: 700;
           font-size: 1.3em;
           margin-bottom: .7em;
+          color: $offWhite;
         }
 
         p{
-          margin-right: 10px;
+          color: $gBlue;
+          font-weight: 400;
         }
       }
     }
+  }
+
+  .footer{
+    // outline: 3px solid green;
+    margin: 2em 0;
+
+    img{
+      width: 28%;
+      max-width: 100%;
+      margin-right: 1.5rem;
+    }
+
+    .footNews{
+      display: flex;
+      margin: 2em 0;
+
+      h1{
+        font-size: 2em;
+        font-weight: 700;
+        color: $gBlue;
+      }
+
+      .title{
+        font-size: 1.05em;
+        font-weight: 800;
+        margin: .7em 0;
+        color: $dBlue;
+      }
+
+      .details{
+        line-height: 1.5;
+        color: $dgBlue;
+        font-weight: 400;
+      }
+    }
+  }
+
+}
+
+.nav{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  background-color: $offWhite;
+  color: black;
+  height: 100vh;
+  width: 68%;
+  z-index: 1;
+  padding: 0 1.5em;
+  padding-top: 1.5em;
+  color: $dBlue;
+  box-shadow: -1em 0em 0em 100vw rgba(0, 0, 0, 0.431);
+  margin: -1.5em 0;
+
+  img{
+    width: 17%;
+  }
+
+  .navitem{
+    list-style: none;
+    font-size: 1.1em;
+    margin: .8em 0;
+    font-weight: 500;
+  }
+  .one{
+    margin-top: 4.7em;
+  }
+
+  .close{
+    margin-left: auto;
   }
 }

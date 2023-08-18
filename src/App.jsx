@@ -3,6 +3,7 @@ import './App.scss'
 import Header from './components/header'
 import Main from './components/main'
 import Footer from './components/footer'
+import MobileMenu from './components/MobileMenu'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className='body'>
       <div className="App">
+        <MobileMenu />
         <Header />
         <Main />
         <Footer />
