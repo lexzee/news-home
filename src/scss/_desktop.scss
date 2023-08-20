@@ -1,7 +1,4 @@
 @media (min-width: 780px){
-  p, h1, h2,  h3, h4, nav, div{
-    margin: 0;
-  }
   .body{
     min-width: 780px;
     max-width: 1440px;
@@ -11,16 +8,10 @@
       padding: 5em;
       display: grid;
       grid-template-rows: repeat(12, auto);
-      // justify-content: space-between;
 
         .header{
-          outline: 1px solid blue;
-          // grid-row: 1 2;
           img{
             width: 80px;
-          }
-
-          .logo{
           }
 
           .menu{
@@ -32,6 +23,7 @@
             li{
               list-style: none;
               margin-left: 2em;
+              font-size: 1.2em;
             }
           }
 
@@ -39,38 +31,27 @@
 
 
         .main{
-          outline: 1px solid red;
-          // grid-row-start: 2;
-          // grid-row-end: 3;
-          // display: flex;
           display: grid;
-          place-content: centers;
-          grid-template-columns: 3fr 1fr;
+          margin: 2em 0;
+          grid-template-columns: 2.5fr 1fr;
           grid-template-rows: 1fr;
-          // place-content: center;
 
           .highlight{
             margin-right: 2em;
-          }
-          .hero{
-            // outline: 1px solid red;
           }
 
           .desc{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            outline: 2px outset pink;
             margin-top: 2em;
 
             .heading{
-              outline: 2px inset blueviolet;
               font-size: 4em;
               margin: 0;
               margin-right: .5em;
             }
 
             .descBody{
-              outline: 2px solid blue;
 
               p{
                 font-size: 1.3em;
@@ -88,39 +69,50 @@
 
           .new{
             margin: 0;
+            padding: 2.5em 1.7em;
+
             h2{
+              font-size: 2.7rem;
             }
 
-            hr{
-            }
             .news{
 
               h3{
+                font-size: 1.4em;
               }
 
               p{
+                font-size: 1em;
+                line-height: 2;
               }
             }
           }
         }
 
         .footer{
-          outline: 3px solid green;
-          // grid-row-start: 10;
-          // grid-row-end: 12;
+          display: flex;
+          justify-content: space-between;
 
           img{
+            width: 130px;
           }
 
           .footNews{
+            margin: 0;
+            width: 30%;
+
 
             h1{
+              font-size: 3em;
             }
 
             .title{
+              font-size: 1.2em;
             }
 
             .details{
+              font-size: 1em;
+              padding-right: 1em;
             }
           }
         }
@@ -129,7 +121,3 @@
     }
 
 }
-
-// .navDesk{
-//   display: relative;
-// }
