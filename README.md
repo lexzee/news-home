@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Loading](https://your-solution-url.com)
+- Solution URL: [Loading](https://www.frontendmentor.io/solutions/a-responsive-news-homepage-using-react-and-scss-lhblpTrsq1)
 - Live Site URL: [Visit](https://news-home-lexzee.vercel.app)
 
 ## My process
