@@ -1,19 +1,21 @@
 import heroMobile from '../assets/images/image-web-3-mobile.jpg'
 import heroDesktop from '../assets/images/image-web-3-desktop.jpg'
 
-const Main = () => {
+const Main = (prop) => {
   return (
     <main className="main">
-      <div className="main">
-        <img src={heroMobile} alt="banner image" className="hero" />
-        <h1 className="heading">
-          The Bright Future of Web 3.0?
-        </h1>
+      <div className="highlight">
+        <img src={prop.isMobile ? heroMobile : heroDesktop} alt="banner image" className="hero" />
         <div className="desc">
-          <p>
-            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.But is it really fulfilling its promise?
-          </p>
-          <button>Read More</button>
+          <h1 className="heading">
+            The Bright Future of Web 3.0?
+          </h1>
+          <div className="descBody">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.But is it really fulfilling its promise?
+            </p>
+            <button>Read More</button>
+          </div>
         </div>
       </div>
       <div className="new">

@@ -1,9 +1,10 @@
 @import 'scss/config';
 @import 'scss/utilities';
 @import 'scss/mobile';
+@import 'scss/desktop';
 
 #root {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
   // text-align: center;
@@ -11,6 +12,12 @@
   place-content: center;
 }
 
+.show{
+  display:relative;
+  margin: 0;
+}
+
 .hidden{
   display: none;
+  margin-left: 10000em;
 }

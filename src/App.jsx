@@ -4,19 +4,33 @@ import Header from './components/header'
 import Main from './components/main'
 import Footer from './components/footer'
 import MobileMenu from './components/MobileMenu'
+import { useEffect } from 'react'
 
 function App() {
   const [clicked, setClicked] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
   const handleClick = ()=>{
     clicked == 0 ? setClicked(1) : setClicked(0)
   }
+
+  useEffect(() => {
+    const handleView= () => {
+      setIsMobile(window.innerWidth < 780);
+    };
+    handleView();
+
+    window.addEventListener('resize', handleView);
+    return () => {
+      window.removeEventListener('resize', handleView);
+    }
+  }, [])
 
   return (
     <div className='body'>
       <div className="App">
         <MobileMenu clicked={clicked} handleClick={handleClick} />
-        <Header handleClick={handleClick} />
-        <Main />
+        <Header handleClick={handleClick} isMobile={isMobile} />
+        <Main isMobile={isMobile} />
         <Footer />
       </div>
       <div className="attribution">

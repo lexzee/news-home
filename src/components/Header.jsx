@@ -7,7 +7,7 @@ const Header = (prop) => {
     <header className="header">
       <img src={logo} alt="logo" className="logo" />
       <img src={menuOpen} alt="" className={`menu open`} onClick={prop.handleClick} />
-      <nav className="nav hidden">
+      <nav className={`navDesk`}>
           <li className="navitem">Home</li>
           <li className="navitem">New</li>
           <li className="navitem">Popular</li>

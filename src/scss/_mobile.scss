@@ -1,12 +1,17 @@
 .body{
-  // outline: 1px groove black;
+  outline: 1px groove black;
   // width: 350px;
   // min-width: 350px;
   max-width: 350px;
-  padding: 1em;
   z-index: 0;
   position: relative;
-
+  
+  .App{
+    position: relative;
+    outline: 1px inset black;
+    padding: 1em;
+  }
+  
   .header{
     // outline: 1px solid red;
     display: flex;
@@ -28,6 +33,10 @@
       height: 10%;
       width: 12%;
       padding: .5em 0;
+    }
+
+    nav{
+      display: none;
     }
   }
 
@@ -62,7 +71,7 @@
     }
 
     .new{
-      outline: 1px solid green;
+      // outline: 1px solid green;
       background-color: $dBlue;
       color: $offWhite;
       padding: 1.5em;
@@ -132,9 +141,8 @@
   }
 
 }
-
-.nav{
-  position: fixed;
+.navMobile{
+  position: absolute;
   display: flex;
   flex-direction: column;
   right: 0;
@@ -142,15 +150,15 @@
   color: black;
   height: 100vh;
   width: 68%;
-  z-index: 1;
+  z-index: 2;
   padding: 0 1.5em;
   padding-top: 1.5em;
   color: $dBlue;
-  box-shadow: -1em 0em 0em 100vw rgba(0, 0, 0, 0.431);
+  box-shadow: -1em 0em 0em 1000vw rgba(0, 0, 0, 0.431);
   margin: -1.5em 0;
 
   img{
-    width: 17%;
+    width: 35px;
   }
 
   .navitem{
